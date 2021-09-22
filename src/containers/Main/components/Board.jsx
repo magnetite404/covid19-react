@@ -11,19 +11,19 @@ function Board({data}){
     return (
         <Grid container spacing = {4}>
             <Grid item xs={12} md={3}> 
-                <Card value={getValue(cases).toLocaleString('pt-BR')} label="Total de casos" color="#5D78FF" />
+                <Card value={cases != 0 ? getValue(cases).toLocaleString('pt-BR') : getValue(cases)} label="Total de casos" color="#5D78FF" />
             </Grid>
             <Grid item xs={12} md={3}> 
-                <Card value={getValue(todayDeaths).toLocaleString('pt-BR')} label="Óbito de hoje" color="#F7B829" />
+                <Card value={todayDeaths != 0 ? getValue(todayDeaths).toLocaleString('pt-BR') : getValue(todayDeaths)} label="Óbito de hoje" color="#F7B829" />
             </Grid>
             <Grid item xs={12} md={3}> 
-                <Card value={getValue(todayCases).toLocaleString('pt-BR')} label="Casos de hoje" color="#000" />
+                <Card value={todayCases != 0 ? getValue(todayCases).toLocaleString('pt-BR') : getValue(todayCases)} label="Casos de hoje" color="#000" />
             </Grid>
             <Grid item xs={12} md={3}> 
-                <Card value={getValue(deaths).toLocaleString('pt-BR')} label="Total de óbitos" color="#E95078" />
+                <Card value={deaths != 0 ? getValue(deaths).toLocaleString('pt-BR') : getValue(deaths)} label="Total de óbitos" color="#E95078" />
             </Grid>
             <Grid item xs={12} md={3}> 
-                <Card value={getValue(recovered).toLocaleString('pt-BR')} label="Total de recuperados" color="#67C887" />
+                <Card value={recovered != 0 ? getValue(recovered).toLocaleString('pt-BR') : getValue(recovered)} label="Total de recuperados" color="#67C887" />
             </Grid>
         </Grid>
     )

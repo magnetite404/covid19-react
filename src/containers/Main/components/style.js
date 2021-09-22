@@ -8,7 +8,7 @@ export const LabelStyled = styled(Typography)`
 
 export const ValueStyled = styled(Typography)`
 font-weight: 400;
-font-size: 2.5rem;
+font-size: 2.3rem;
 `
 
 export const CardContentStyled = styled(CardContent)`
