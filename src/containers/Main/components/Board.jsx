@@ -14,7 +14,7 @@ function Board({data}){
                 <Card value={cases != 0 ? getValue(cases).toLocaleString('pt-BR') : getValue(cases)} label="Total de casos" color="#5D78FF" />
             </Grid>
             <Grid item xs={12} md={3}> 
-                <Card value={todayDeaths != 0 ? getValue(todayDeaths).toLocaleString('pt-BR') : getValue(todayDeaths)} label="Óbito de hoje" color="#F7B829" />
+                <Card value={todayDeaths != 0 ? getValue(todayDeaths).toLocaleString('pt-BR') : getValue(todayDeaths)} label="Óbitos de hoje" color="#F7B829" />
             </Grid>
             <Grid item xs={12} md={3}> 
                 <Card value={todayCases != 0 ? getValue(todayCases).toLocaleString('pt-BR') : getValue(todayCases)} label="Casos de hoje" color="#000" />
